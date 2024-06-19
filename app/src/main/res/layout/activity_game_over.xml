@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bggame"
+    android:gravity="center"
+    tools:context=".GameOver">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+
+                android:background="@drawable/white">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="800px"
+                    android:layout_height="400px"
+                    app:srcCompat="@drawable/gameover" />
+
+                <Button
+                    android:id="@+id/playagain"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="900px"
+
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#57496F"
+                    android:foregroundGravity="center"
+                    android:text="Play Again"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="15dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="600px"
+                    android:gravity="center"
+                    android:text="Score"
+                    android:textColor="#4C4747"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/highscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="400px"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="#3F4A86"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/getscore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="700px"
+                    android:gravity="center"
+                    android:text="Score"
+                    android:textColor="@color/pink"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

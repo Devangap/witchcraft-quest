@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@drawable/background1"
+    android:foregroundGravity="bottom"
+    tools:context=".SplashScreen">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="46dp"
+
+
+        android:backgroundTint="#57496F"
+        android:text="@string/start"
+        app:cornerRadius="15dp" />
+
+
+</RelativeLayout>
+
